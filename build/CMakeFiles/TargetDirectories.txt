@@ -1,0 +1,5 @@
+C:/Users/Abdo/C++ Projects/Tournaments/build/CMakeFiles/Proj.dir
+C:/Users/Abdo/C++ Projects/Tournaments/build/CMakeFiles/package.dir
+C:/Users/Abdo/C++ Projects/Tournaments/build/CMakeFiles/package_source.dir
+C:/Users/Abdo/C++ Projects/Tournaments/build/CMakeFiles/edit_cache.dir
+C:/Users/Abdo/C++ Projects/Tournaments/build/CMakeFiles/rebuild_cache.dir

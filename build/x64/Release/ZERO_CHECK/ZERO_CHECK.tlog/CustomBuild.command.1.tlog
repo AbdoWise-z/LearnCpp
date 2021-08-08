@@ -1,0 +1,10 @@
+^C:\USERS\ABDO\C++ PROJECTS\TOURNAMENTS\BUILD\CMAKEFILES\EAA3DB70C8A648544125CDE4E2DFDF16\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Abdo/C++ Projects/Tournaments" "-BC:/Users/Abdo/C++ Projects/Tournaments/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Abdo/C++ Projects/Tournaments/build/Proj.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
