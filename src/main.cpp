@@ -1,33 +1,18 @@
 #include <bits/stdc++.h>
-#include "utility.h"
-#include "MathUtils.h"
 
-using namespace std;
-using MathUtils::Expression;
+#define pl(x) std::cout << x << "\n"
+#define p(x) std::cout << x
 
-ld f(ld x){
-    return 1.0 / sinhl(x);
+void solve(){
+
 }
 
-ld f(ld x , ld y){
-    return y * x;
-}
 
 int main(){
-    //this is just a test for some of the stuff I code
-    try{
-        PROFILER_TIMER("Create");
-
-        MathUtils::addFunction1p("f" , f);
-        MathUtils::addFunction2p("f" , f);
-        
-        Expression exp("sigma(e^n , 0 , 2)");
-
-        cout << exp.eval() << endl;
-        
-    }catch(MathUtils::ExpressionError e){
-        cout << "ExpError: " << e.error << " at " << e.where << endl;
+    int tc = 0;
+    std::cin >> tc;
+    while(tc--){
+        solve();
     }
-
     return EXIT_SUCCESS;
 }
