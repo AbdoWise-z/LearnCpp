@@ -56,33 +56,13 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Abdo\C++ Projects\Tournaments"
+CMAKE_SOURCE_DIR = "C:\Users\Abdo\C++ Projects\LearnCpp"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Abdo\C++ Projects\Tournaments\build"
+CMAKE_BINARY_DIR = "C:\Users\Abdo\C++ Projects\LearnCpp\build"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-.PHONY : package/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake "C:/Users/Abdo/C++ Projects/Tournaments/build/CPackSourceConfig.cmake"
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-.PHONY : package_source/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -106,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Abdo\C++ Projects\Tournaments\build\CMakeFiles" "C:\Users\Abdo\C++ Projects\Tournaments\build\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Abdo\C++ Projects\LearnCpp\build\CMakeFiles" "C:\Users\Abdo\C++ Projects\LearnCpp\build\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Abdo\C++ Projects\Tournaments\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Abdo\C++ Projects\LearnCpp\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -147,6 +127,19 @@ Proj: cmake_check_build_system
 Proj/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proj.dir\build.make CMakeFiles/Proj.dir/build
 .PHONY : Proj/fast
+
+#=============================================================================
+# Target rules for targets named Playground
+
+# Build rule for target.
+Playground: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Playground
+.PHONY : Playground
+
+# fast build rule for target.
+Playground/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Playground.dir\build.make CMakeFiles/Playground.dir/build
+.PHONY : Playground/fast
 
 src/MathUtils.obj: src/MathUtils.cpp.obj
 .PHONY : src/MathUtils.obj
@@ -196,30 +189,6 @@ src/console.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proj.dir\build.make CMakeFiles/Proj.dir/src/console.cpp.s
 .PHONY : src/console.cpp.s
 
-src/looper_thread.obj: src/looper_thread.cpp.obj
-.PHONY : src/looper_thread.obj
-
-# target to build an object file
-src/looper_thread.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proj.dir\build.make CMakeFiles/Proj.dir/src/looper_thread.cpp.obj
-.PHONY : src/looper_thread.cpp.obj
-
-src/looper_thread.i: src/looper_thread.cpp.i
-.PHONY : src/looper_thread.i
-
-# target to preprocess a source file
-src/looper_thread.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proj.dir\build.make CMakeFiles/Proj.dir/src/looper_thread.cpp.i
-.PHONY : src/looper_thread.cpp.i
-
-src/looper_thread.s: src/looper_thread.cpp.s
-.PHONY : src/looper_thread.s
-
-# target to generate assembly for a file
-src/looper_thread.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proj.dir\build.make CMakeFiles/Proj.dir/src/looper_thread.cpp.s
-.PHONY : src/looper_thread.cpp.s
-
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -243,6 +212,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proj.dir\build.make CMakeFiles/Proj.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/playground.obj: src/playground.cpp.obj
+.PHONY : src/playground.obj
+
+# target to build an object file
+src/playground.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Playground.dir\build.make CMakeFiles/Playground.dir/src/playground.cpp.obj
+.PHONY : src/playground.cpp.obj
+
+src/playground.i: src/playground.cpp.i
+.PHONY : src/playground.i
+
+# target to preprocess a source file
+src/playground.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Playground.dir\build.make CMakeFiles/Playground.dir/src/playground.cpp.i
+.PHONY : src/playground.cpp.i
+
+src/playground.s: src/playground.cpp.s
+.PHONY : src/playground.s
+
+# target to generate assembly for a file
+src/playground.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Playground.dir\build.make CMakeFiles/Playground.dir/src/playground.cpp.s
+.PHONY : src/playground.cpp.s
 
 src/utility.obj: src/utility.cpp.obj
 .PHONY : src/utility.obj
@@ -275,9 +268,8 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... package
-	@echo ... package_source
 	@echo ... rebuild_cache
+	@echo ... Playground
 	@echo ... Proj
 	@echo ... src/MathUtils.obj
 	@echo ... src/MathUtils.i
@@ -285,12 +277,12 @@ help:
 	@echo ... src/console.obj
 	@echo ... src/console.i
 	@echo ... src/console.s
-	@echo ... src/looper_thread.obj
-	@echo ... src/looper_thread.i
-	@echo ... src/looper_thread.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/playground.obj
+	@echo ... src/playground.i
+	@echo ... src/playground.s
 	@echo ... src/utility.obj
 	@echo ... src/utility.i
 	@echo ... src/utility.s

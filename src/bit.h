@@ -1,3 +1,6 @@
+// Author : Abdo Mohamed
+// a class to do some bit-wise operatios
+
 #pragma once
 
 #include<memory.h>

@@ -30,7 +30,7 @@ void Console::draw(){
         w->draw(delta);
     }
 
-    std::cout.flush(); //make sure its emplty
+    std::cout.flush(); //make sure its empty
 }
 
 void Console::addItem(CWidget& w){

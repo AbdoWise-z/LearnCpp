@@ -1,3 +1,6 @@
+//fancy console .. to create animated bars and other stuff inside a console
+// ispired by linux consoles 
+// Author : Abdo Mohamed
 #pragma once
 
 #include<iostream>

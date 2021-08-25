@@ -1,27 +1,27 @@
 [
 {
-  "directory": "C:/Users/Abdo/C++ Projects/Tournaments/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -g -o CMakeFiles\\Proj.dir\\src\\main.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\Tournaments\\src\\main.cpp\"",
-  "file": "C:/Users/Abdo/C++ Projects/Tournaments/src/main.cpp"
+  "directory": "C:/Users/Abdo/C++ Projects/LearnCpp/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~2.0-W\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\Proj.dir\\src\\main.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\LearnCpp\\src\\main.cpp\"",
+  "file": "C:/Users/Abdo/C++ Projects/LearnCpp/src/main.cpp"
 },
 {
-  "directory": "C:/Users/Abdo/C++ Projects/Tournaments/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -g -o CMakeFiles\\Proj.dir\\src\\utility.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\Tournaments\\src\\utility.cpp\"",
-  "file": "C:/Users/Abdo/C++ Projects/Tournaments/src/utility.cpp"
+  "directory": "C:/Users/Abdo/C++ Projects/LearnCpp/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~2.0-W\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\Proj.dir\\src\\utility.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\LearnCpp\\src\\utility.cpp\"",
+  "file": "C:/Users/Abdo/C++ Projects/LearnCpp/src/utility.cpp"
 },
 {
-  "directory": "C:/Users/Abdo/C++ Projects/Tournaments/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -g -o CMakeFiles\\Proj.dir\\src\\looper_thread.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\Tournaments\\src\\looper_thread.cpp\"",
-  "file": "C:/Users/Abdo/C++ Projects/Tournaments/src/looper_thread.cpp"
+  "directory": "C:/Users/Abdo/C++ Projects/LearnCpp/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~2.0-W\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\Proj.dir\\src\\console.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\LearnCpp\\src\\console.cpp\"",
+  "file": "C:/Users/Abdo/C++ Projects/LearnCpp/src/console.cpp"
 },
 {
-  "directory": "C:/Users/Abdo/C++ Projects/Tournaments/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -g -o CMakeFiles\\Proj.dir\\src\\console.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\Tournaments\\src\\console.cpp\"",
-  "file": "C:/Users/Abdo/C++ Projects/Tournaments/src/console.cpp"
+  "directory": "C:/Users/Abdo/C++ Projects/LearnCpp/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~2.0-W\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\Proj.dir\\src\\MathUtils.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\LearnCpp\\src\\MathUtils.cpp\"",
+  "file": "C:/Users/Abdo/C++ Projects/LearnCpp/src/MathUtils.cpp"
 },
 {
-  "directory": "C:/Users/Abdo/C++ Projects/Tournaments/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Proj.dir/includes_CXX.rsp -g -o CMakeFiles\\Proj.dir\\src\\MathUtils.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\Tournaments\\src\\MathUtils.cpp\"",
-  "file": "C:/Users/Abdo/C++ Projects/Tournaments/src/MathUtils.cpp"
+  "directory": "C:/Users/Abdo/C++ Projects/LearnCpp/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~2.0-W\\mingw64\\bin\\X86_64~2.EXE  @CMakeFiles/Playground.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\Playground.dir\\src\\playground.cpp.obj -c \"C:\\Users\\Abdo\\C++ Projects\\LearnCpp\\src\\playground.cpp\"",
+  "file": "C:/Users/Abdo/C++ Projects/LearnCpp/src/playground.cpp"
 }
 ]

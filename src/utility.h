@@ -1,3 +1,6 @@
+//header that contains some useful functions / classes
+//Author : Abdo Mohamed
+
 #pragma once
 
 #include <iostream> 

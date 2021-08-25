@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Playground.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~2.0-W\mingw64\bin\ar.exe qc CMakeFiles\Playground.dir/objects.a @CMakeFiles\Playground.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~2.0-W\mingw64\bin\X86_64~2.EXE -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\Playground.dir/objects.a -Wl,--no-whole-archive -o Playground.exe -Wl,--out-implib,libPlayground.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Playground.dir\linklibs.rsp

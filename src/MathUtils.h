@@ -1,3 +1,11 @@
+//
+// a Math Utility header
+// can be used evaluate math expressions and do other math operations
+// supported operations so far are : eval , Integrate
+// 
+// Author : Abdo Mohamed
+// 
+
 #pragma once
 #include<cmath>
 #include<vector>
@@ -22,14 +30,28 @@ public:
     }
 
     virtual ~Evalable(){}
-};
+}; //Interface Evalable
 
-class _Term;
-class _Expression;
 class _VariableFactor;
 
+class _Expression : public Evalable{
+public:
+    std::vector<Evalable*> mTerms;
+    virtual ld eval();
+
+    virtual ~_Expression();
+}; //class _Expression
+
+class _Term : public Evalable{
+public:
+    std::vector<Evalable*> mFactors;
+    virtual ld eval();
+    virtual ~_Term();
+}; //class _Term
+
+
 //
-//Evaluates a string expression
+//Evaluates a string expression (MUST HAVE A NULL TEMINATOR)
 //i.e : 2 + 2 , 4/(1 + 2) , sin(x) / cos(y)
 //supported functions :
 //  sin , cos , tan , csc , sec , cot , and their inverses
@@ -98,22 +120,8 @@ public:
     //returns refrunce to the variable or creates it if it does not exist
     ld& operator[](const std::string& name);
 
-};
+}; //class Expression
 
-class _Expression : public Evalable{
-public:
-    std::vector<Evalable*> mTerms;
-    virtual ld eval();
-
-    virtual ~_Expression();
-};
-
-class _Term : public Evalable{
-public:
-    std::vector<Evalable*> mFactors;
-    virtual ld eval();
-    virtual ~_Term();
-};
 
 //converts the passed value from rad to deg
 ld deg(ld rads);
@@ -149,4 +157,4 @@ void removeConstant(const std::string& name);
 //computes the limited integral of an expression
 ld Integrate(Expression& c , ld from , ld to , const std::string& variable_name = "x" , ld dx = 1E-4);
 
-}
+}//namespace MathUtils

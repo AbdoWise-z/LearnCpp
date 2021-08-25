@@ -3,6 +3,10 @@ project(Proj VERSION 0.1.0)
 
 include_directories("include")
 
-set(PRJ_SRC src/main.cpp src/utility.cpp src/looper_thread.cpp src/console.cpp src/MathUtils.cpp)
+# src/looper_thread.cpp is should be added to sources .. but I changed the compiler 
+# so it doesnot work any more :|
+
+set(PRJ_SRC src/main.cpp src/utility.cpp src/console.cpp src/MathUtils.cpp)
 
 add_executable(Proj ${PRJ_SRC})
+add_executable(Playground src/playground.cpp)

@@ -1,3 +1,6 @@
+//a thread .. that loops (keeps calling a function)
+// Author : Abdo Mohamed
+
 #pragma once
 
 #include<thread>

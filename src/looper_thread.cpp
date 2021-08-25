@@ -1,3 +1,6 @@
+//Looper thread impl
+// Author : Abdo Mohamed
+
 #include "looper_thread.h"
 #include <thread>
 

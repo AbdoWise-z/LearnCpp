@@ -1,3 +1,8 @@
+// Math Utitlity header implementation 
+//
+// Author : Abdo Mohamed
+//
+
 #include "MathUtils.h"
 #include <iostream>
 #include <chrono>
@@ -77,7 +82,7 @@ static ld randld(){
     return ((ld) rand()) / RAND_MAX;
 }
 
-static ld randld(ld seed){ //seed should be a long type .. but I need it to be ld
+static ld randld(ld seed){ //seed should be a uint_t .. but I need it to be ld
     unsigned int s = (unsigned int) seed;
     srand(s);
     return ((ld) rand()) / RAND_MAX;
@@ -291,8 +296,8 @@ bool Expression::_can_eat(char c){
 void Expression::_nextchar(){
     pos++;
     ch = data[pos];
-    if (ch == '\0')
-        ch = -1;
+    //if (ch == '\0')
+    //    ch = -1;
 }
 
 _Expression* Expression::_parseEpxression(){
@@ -340,7 +345,14 @@ _Term* Expression::_parseTerm(){
     //std::cout << "Added a factor >> " << e->eval() << std::endl;
     
     for (;;){
-        if (_eat('*')){
+        if (_eat('*') || (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || _can_eat('(')){
+            
+            //multiply is not only limited to the '*' operator
+            // it can be : 2x , (x-1)(x-2)
+            // I use _can_eat('(') istead of _eat because the _parseFactor
+            // is responsable of eating the '('
+            // _eat('*') removes any white spaces .. so using 'ch' should be fine here
+
             Evalable* v = _parseFactor();
             if (v == nullptr){
                 std::cout << "v is null\n";
@@ -723,6 +735,11 @@ Evalable* Expression::_parseFactor(){
         return pp;
     }
 
+    if (ret == nullptr){ //if its empty brakets .. this may heppen .. so just return 0.0
+        //std::cout << "ret = nullptr\n";
+        ret = new _Constant(0.0);
+    }
+
     return ret;
 }
  
@@ -732,6 +749,10 @@ Expression::Expression(const char* func){
     pos = -1;
     _nextchar();
     mExp = _parseEpxression();
+
+    if (ch != '\0'){
+        throw ExpressionError("failed to parse hole expression" , pos);
+    }
 }
 
 void Expression::setVariable(const std::string& name , ld value){

@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proj.dir/src/MathUtils.cpp.obj.d"
   "CMakeFiles/Proj.dir/src/console.cpp.obj"
   "CMakeFiles/Proj.dir/src/console.cpp.obj.d"
-  "CMakeFiles/Proj.dir/src/looper_thread.cpp.obj"
-  "CMakeFiles/Proj.dir/src/looper_thread.cpp.obj.d"
   "CMakeFiles/Proj.dir/src/main.cpp.obj"
   "CMakeFiles/Proj.dir/src/main.cpp.obj.d"
   "CMakeFiles/Proj.dir/src/utility.cpp.obj"

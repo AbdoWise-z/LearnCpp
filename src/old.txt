@@ -1,0 +1,30 @@
+int n , k;
+    
+    cin >> n >> k;
+
+    ll arr[n];
+    for (int i = 0;i < n;i++){
+        cin >> arr[i];
+    }
+
+    int actual_size = 1;
+    for (int i = 0;i < n - 1;i++){
+        if (arr[i + 1] < arr[i]){
+            actual_size++;
+            continue;
+        }
+        for (int j = 0;j < n;j++){
+            if (j != i && j != i + 1){
+                if (arr[j] > arr[i] && arr[j] < arr[i+1]){
+                    actual_size++;
+                    break;
+                }
+            }
+        }
+    }
+
+    if (actual_size > k){
+        pl("No");
+    }else{
+        pl("Yes");
+    }
